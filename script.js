@@ -20,22 +20,18 @@ button.addEventListener("click", () => {
 
   setTimeout(() => {
     status.textContent = "Interpreting semantic meaning...";
-  }, 2000);
+  }, 1500);
 
   setTimeout(() => {
     status.textContent = "Consulting visual model...";
-  }, 4000);
-
-  setTimeout(() => {
-    status.textContent = "Resolving latent space...";
-  }, 6500);
+  }, 3000);
 
   setTimeout(() => {
     status.textContent = "Finalizing output...";
-  }, 8500);
+  }, 5000);
 
   setTimeout(() => {
-    // 1〜40 のランダム整数
+    // 1〜31 のランダム整数
     const randomNumber = Math.floor(Math.random() * 31) + 1;
 
     img.src = `images/img${randomNumber}.jpg`;
@@ -44,5 +40,5 @@ button.addEventListener("click", () => {
 
     // ボタン再有効化
     button.disabled = false;
-  }, 10500);
+  }, 7000);
 });
