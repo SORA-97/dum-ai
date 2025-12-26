@@ -36,7 +36,7 @@ button.addEventListener("click", () => {
 
   setTimeout(() => {
     // 1〜40 のランダム整数
-    const randomNumber = Math.floor(Math.random() * 30) + 1;
+    const randomNumber = Math.floor(Math.random() * 35) + 1;
 
     img.src = `images/img${randomNumber}.jpg`;
     img.style.display = "block";
